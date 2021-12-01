@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7MH2WpBAyqj0pZMKoCisUOKeTs2jVSPYQLgNXi6YSat98STgr0jjg2xwtkD3iZPfMuxJKPct/wfI8DC8Pj6z2g==",
+  "success": true,
+  "projectFilePath": "/home/vitto/advent-of-code/Day01/Day01.fsproj",
+  "expectedPackageFiles": [
+    "/home/vitto/.nuget/packages/fsharp.core/5.0.0/fsharp.core.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

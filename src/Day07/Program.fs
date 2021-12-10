@@ -18,8 +18,9 @@ let main argv =
 
     let part1Sol = Array.sumBy (fun pos -> distance pos median) positions
 
-    let part2Floor = Array.sumBy (fun pos -> gauss (distance pos avgFloor)) positions
-    let part2Ceil  = part2Floor + 1
+    let part2 avg  = Array.sumBy (fun pos -> gauss (distance pos avg)) positions
+    let part2Floor = part2 avgFloor
+    let part2Ceil  = part2 avgFloor + 1
     let part2Sol   = min part2Floor part2Ceil
 
     printfn "Part 1 solution: %A\nPart 2 solution: %A" part1Sol part2Sol

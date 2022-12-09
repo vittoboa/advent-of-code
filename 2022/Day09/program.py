@@ -53,8 +53,7 @@ with open('input.txt', 'r') as file:
             head.y += movement.y
 
             # find new position for all knots of the tail
-            for i in range(len(tails)):
-                tails[i] = move_tail(tails[i], head if i == 0 else tails[i - 1])
+            tails = [move_tail(tails[i], head if i == 0 else tails[i - 1]) for i in range(num_knots)]
 
             # store positions of the selected knots, for part 1 and 2
             tail_positions1.add(dataclasses.astuple(tails[0]))
